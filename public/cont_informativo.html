@@ -1,0 +1,68 @@
+<!-- FAZER A PÁGINA BASE DOS CONTEÚDOS INFORMATIVOS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CateQuiz | Menu das Páginas Informativas</title>
+
+  <script src="./js/sessao.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./assets/icon/catequiz-icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="titulo">CateQuiz</h1>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Inicial</a>
+        </li>
+        <li class="agora">
+          <a href="#">Conteúdo<br>Informativo</a>
+        </li>
+        <li>
+          <a href="quiz.html">Quiz</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BOTÕES QUE LEVAM ÀS PÁGINAS INFORMATIVAS -->
+  <div class="area-buttons">
+    <button class="button-informative-pages" onclick="window.location.href = './cont_informativo_page=1.html'">
+      <h4>Página Informativa 1: <strong>Antecedentes do Catolicismo</strong></h4>
+    </button>
+    <button class="button-informative-pages" onclick="window.location.href = './cont_informativo_page=2.html'">
+      <h4>Página Informativa 2: <strong>Aspectos Gerais Históricos</strong></h4>
+    </button>
+    <button class="button-informative-pages" onclick="window.location.href = './cont_informativo_page=3.html'">
+      <h4>Página Informativa 3: <strong>Aspectos da Fé Católica</strong></h4>
+    </button>
+    <button class="button-informative-pages" onclick="window.location.href = './cont_informativo_page=4.html'">
+      <h4>Página Informativa 4: <strong>Qual a relação entre o chocolate Ferrero Rocher e Nossa Senhora de Lourdes?</strong></h4>
+    </button>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <h4>Feito com amor por aluno &hearts; Aaaaaa &copy; 2025</h4>
+      <span class="version">v1.0.0</span>
+    </div>
+  </div>
+</body>
+
+</html>
