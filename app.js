@@ -19,6 +19,11 @@ var indexRouter = require("./src/routes/index");
 var usuarioRouter = require("./src/routes/usuarios");
 var avisosRouter = require("./src/routes/avisos");
 var medidasRouter = require("./src/routes/medidas");
+
+const quizRouter = require('./src/routes/quiz');
+var usuarioRespostaRouter = require("./src/routes/usuarioResposta");
+const dashboardRouter = require("./src/routes/dashboard");
+
 // var aquariosRouter = require("./src/routes/aquarios");
 // var empresasRouter = require("./src/routes/empresas");
 
@@ -32,6 +37,11 @@ app.use("/", indexRouter);
 app.use("/usuarios", usuarioRouter);
 app.use("/avisos", avisosRouter);
 app.use("/medidas", medidasRouter);
+
+app.use('/quiz', quizRouter);
+app.use("/usuario_resposta", usuarioRespostaRouter);
+app.use("/dashboard", dashboardRouter);
+
 // app.use("/aquarios", aquariosRouter);
 // app.use("/empresas", empresasRouter);
 

@@ -1,20 +1,13 @@
-<!-- FAZER A PÁGINA DO QUIZ -->
-<!-- FAZER A PÁGINA BASE DOS CONTEÚDOS INFORMATIVOS -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CateQuiz | Quiz</title>
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/icon/catequiz-icon.png" />
     <script src="./js/sessao.js"></script>
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./assets/icon/catequiz-icon.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
@@ -22,239 +15,230 @@
         <div class="container">
             <h1 class="titulo">CateQuiz</h1>
             <ul class="navbar">
-                <li>
-                    <a href="index.html">Inicial</a>
-                </li>
-                <li>
-                    <a href="cont_informativo.html">Conteúdo<br>Informativo</a>
-                </li>
-                <li class="agora">
-                    <a href="#">Quiz</a>
-                </li>
+                <li><a href="index.html">Inicial</a></li>
+                <li><a href="cont_informativo.html">Conteúdo<br>Informativo</a></li>
+                <li class="agora"><a href="#">Quiz</a></li>
                 <li>|</li>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <li>
-                    <a href="cadastro.html">Cadastro</a>
-                </li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </div>
     </div>
 
-    <!-- CORPO -->
     <div class="text">
-        <section id="perguntas_pag_1">
-            1. Qual é considerada por muitos estudiosos como a primeira denominação cristã?
-            (A) Protestantismo
-            (B) Ortodoxia
-            (C) Anglicanismo
-            (D) Catolicismo
-            (E) Pentecostalismo
-            ✅ Resposta correta: (D) Catolicismo
+        <form id="formQuiz">
+            <h2>Responda ao quiz!</h2>
 
-            2. Qual é o nome dado ao conjunto de cinco livros escritos pelo profeta Moisés, considerados sagrados no judaísmo?
-            A) Torá
-            B) Talmude
-            C) Pentecostes
-            D) Apócrifos
-            E) Evangelhos
-            ✅ Resposta correta: (A) Torá
+            <div class="quiz-container">
+                <div class="pergunta" data-id="1" data-pagina="1">
+                    <p>1. Qual é considerada por muitos estudiosos como a primeira denominação cristã?</p>
+                    <label><input type="radio" name="q1" value="A" required> A) Protestantismo</label><br />
+                    <label><input type="radio" name="q1" value="B"> B) Ortodoxia</label><br />
+                    <label><input type="radio" name="q1" value="C"> C) Anglicanismo</label><br />
+                    <label><input type="radio" name="q1" value="D"> D) Catolicismo</label><br />
+                    <label><input type="radio" name="q1" value="E"> E) Pentecostalismo</label>
+                </div>
 
-            3. Por qual outro nome Jesus é conhecido?
-            A) Emmanuel
-            B) Eliá
-            C) Yeshua
-            D) Yehudá
-            E) Jeová
-            ✅ Resposta correta: (C) Yeshua
+                <div class="pergunta" data-id="2" data-pagina="1">
+                    <p>2. Qual é o nome dado ao conjunto de cinco livros escritos por Moisés, considerados sagrados no
+                        judaísmo?</p>
+                    <label><input type="radio" name="q2" value="A" required> A) Torá</label><br />
+                    <label><input type="radio" name="q2" value="B"> B) Talmude</label><br />
+                    <label><input type="radio" name="q2" value="C"> C) Pentecostes</label><br />
+                    <label><input type="radio" name="q2" value="D"> D) Apócrifos</label><br />
+                    <label><input type="radio" name="q2" value="E"> E) Evangelhos</label>
+                </div>
 
-            5. Quantas profecias, segundo os cristãos, Jesus cumpriu?
-            A) 12
-            B) 53
-            C) 100
-            D) Mais de 330
-            E) 613
-            ✅ Resposta correta: (D) Mais de 330
+                <div class="pergunta" data-id="3" data-pagina="1">
+                    <p>3. Segundo os cristãos, quantas profecias cumpriu Jesus (também chamado de Yeshua)?</p>
+                    <label><input type="radio" name="q3" value="A" required> A) 12</label><br />
+                    <label><input type="radio" name="q3" value="B"> B) 53</label><br />
+                    <label><input type="radio" name="q3" value="C"> C) 100</label><br />
+                    <label><input type="radio" name="q3" value="D"> D) Mais de 330</label><br />
+                    <label><input type="radio" name="q3" value="E"> E) 613</label>
+                </div>
 
-            6. O que significa a palavra "católico"?
-            A) Antigo
-            B) Autêntico
-            C) Universal
-            D) Apostólico
-            E) Divino
-            ✅ Resposta correta: (C) Universal
+                <div class="pergunta" data-id="4" data-pagina="1">
+                    <p>4. O que significa a palavra "católico"?</p>
+                    <label><input type="radio" name="q4" value="A" required> A) Antigo</label><br />
+                    <label><input type="radio" name="q4" value="B"> B) Autêntico</label><br />
+                    <label><input type="radio" name="q4" value="C"> C) Universal</label><br />
+                    <label><input type="radio" name="q4" value="D"> D) Apostólico</label><br />
+                    <label><input type="radio" name="q4" value="E"> E) Divino</label>
+                </div>
 
-            7. Qual foi uma das principais contribuições da Igreja Católica para a sociedade ocidental?
-            A fundação de escolas públicas
-            A criação de sistemas de irrigação
-            A fundação das primeiras universidades
-            A invenção da imprensa
-            A construção de cidades fortificadas
-            ✅ Resposta correta: (C) A fundação das primeiras universidades
-        </section>
+                <div class="pergunta" data-id="5" data-pagina="1">
+                    <p>5. Qual foi uma das principais contribuições da Igreja Católica para a sociedade ocidental?</p>
+                    <label><input type="radio" name="q5" value="A" required> A) A fundação de escolas
+                        públicas</label><br />
+                    <label><input type="radio" name="q5" value="B"> B) A criação de sistemas de irrigação</label><br />
+                    <label><input type="radio" name="q5" value="C"> C) A fundação das primeiras
+                        universidades</label><br />
+                    <label><input type="radio" name="q5" value="D"> D) A invenção da imprensa</label><br />
+                    <label><input type="radio" name="q5" value="E"> E) A construção de cidades fortificadas</label>
+                </div>
 
-        <section id="perguntas_pag_2">
-            1. Onde Jesus nasceu, segundo os evangelhos?
-            A) Nazaré
-            B) Jerusalém
-            C) Roma
-            D) Belém
-            E) Cafarnaum
-            ✅ Resposta correta: D) Belém
+                <div class="pergunta" data-id="6" data-pagina="2">
+                    <p>6. Qual foi a causa da morte de Jesus?</p>
+                    <label><input type="radio" name="q6" value="A" required> A) Apedrejamento</label><br />
+                    <label><input type="radio" name="q6" value="B"> B) Envenenamento</label><br />
+                    <label><input type="radio" name="q6" value="C"> C) Crucificação</label><br />
+                    <label><input type="radio" name="q6" value="D"> D) Decapitação</label><br />
+                    <label><input type="radio" name="q6" value="E"> E) Suicídio</label>
+                </div>
 
-            2. Qual foi a causa da morte de Jesus?
-            A) Apedrejamento
-            B) Envenenamento
-            C) Crucificação
-            D) Decapitação
-            E) Suicídio
-            ✅ Resposta correta: C
+                <div class="pergunta" data-id="7" data-pagina="2">
+                    <p>7. Qual foi o apóstolo considerado o primeiro Papa da Igreja Católica?</p>
+                    <label><input type="radio" name="q7" value="A" required> A) João</label><br />
+                    <label><input type="radio" name="q7" value="B"> B) Paulo</label><br />
+                    <label><input type="radio" name="q7" value="C"> C) Tiago</label><br />
+                    <label><input type="radio" name="q7" value="D"> D) Pedro</label><br />
+                    <label><input type="radio" name="q7" value="E"> E) André</label>
+                </div>
 
-            3. Qual foi o apóstolo considerado o primeiro Papa da Igreja Católica?
-            A) João
-            B) Paulo
-            C) Tiago
-            D) Pedro
-            E) André
-            ✅ Resposta correta: D
+                <div class="pergunta" data-id="8" data-pagina="2">
+                    <p>8. Qual era a língua mais utilizada no mundo mediterrâneo durante a expansão inicial do
+                        cristianismo?</p>
+                    <label><input type="radio" name="q8" value="A" required> A) Hebraico</label><br />
+                    <label><input type="radio" name="q8" value="B"> B) Latim</label><br />
+                    <label><input type="radio" name="q8" value="C"> C) Árabe</label><br />
+                    <label><input type="radio" name="q8" value="D"> D) Aramaico</label><br />
+                    <label><input type="radio" name="q8" value="E"> E) Grego</label>
+                </div>
 
-            . Qual era a língua mais utilizada no mundo mediterrâneo durante a expansão inicial do cristianismo?
-            A) Hebraico
-            B) Latim
-            C) Árabe
-            D) Aramaico
-            E) Grego
-            ✅ Resposta correta: E
+                <div class="pergunta" data-id="9" data-pagina="2">
+                    <p>9. Qual imperador romano legalizou o cristianismo através do Édito de Milão?</p>
+                    <label><input type="radio" name="q9" value="A" required> A) Nero</label><br />
+                    <label><input type="radio" name="q9" value="B"> B) Augusto</label><br />
+                    <label><input type="radio" name="q9" value="C"> C) Constantino</label><br />
+                    <label><input type="radio" name="q9" value="D"> D) Teodósio</label><br />
+                    <label><input type="radio" name="q9" value="E"> E) Trajano</label>
+                </div>
 
-            5. Qual imperador romano legalizou o cristianismo através do Édito de Milão?
-            A) Nero
-            B) Augusto
-            C) Constantino
-            D) Teodósio
-            E) Trajano
-            ✅ Resposta correta: C
+                <div class="pergunta" data-id="10" data-pagina="2">
+                    <p>10. Qual foi a principal causa do Grande Cisma de 1054?</p>
+                    <label><input type="radio" name="q10" value="A" required> A) Disputas teológicas e
+                        políticas</label><br />
+                    <label><input type="radio" name="q10" value="B"> B) A Reforma Protestante</label><br />
+                    <label><input type="radio" name="q10" value="C"> C) A conversão de Constantino</label><br />
+                    <label><input type="radio" name="q10" value="D"> D) A criação do Édito de Milão</label><br />
+                    <label><input type="radio" name="q10" value="E"> E) A morte de Pedro em Roma</label>
+                </div>
 
-            6. Qual foi a principal causa do Grande Cisma de 1054?
-            Disputas teológicas e políticas
-            A Reforma Protestante
-            A conversão de Constantino
-            A criação do Édito de Milão
-            A morte de Pedro em Roma
-            ✅ Resposta correta: A
-        </section>
+                <div class="pergunta" data-id="11" data-pagina="3">
+                    <p>11. O que define o mistério da Santíssima Trindade no Cristianismo?</p>
+                    <label><input type="radio" name="q11" value="A" required> A) Deus como três seres
+                        distintos</label><br />
+                    <label><input type="radio" name="q11" value="B"> B) Deus como um único ser em três
+                        pessoas</label><br />
+                    <label><input type="radio" name="q11" value="C"> C) Deus como uma força impessoal</label><br />
+                    <label><input type="radio" name="q11" value="D"> D) Deus como apenas Pai e Filho</label><br />
+                    <label><input type="radio" name="q11" value="E"> E) Deus como uma entidade única sem
+                        distinções</label>
+                </div>
 
-        <section id="perguntas_pag_3">
-            1. O que define o mistério da Santíssima Trindade no Cristianismo?
-            Deus como três seres distintos
-            Deus como um único ser em três pessoas
-            Deus como uma força impessoal
-            Deus como apenas Pai e Filho
-            Deus como uma entidade única sem distinções
-            ✅ Resposta correta: B
+                <div class="pergunta" data-id="12" data-pagina="3">
+                    <p>12. Quais são os três pilares fundamentais da fé católica?</p>
+                    <label><input type="radio" name="q12" value="A" required> A) Tradição Apostólica, Sagradas
+                        Escrituras e Magistério da Igreja</label><br />
+                    <label><input type="radio" name="q12" value="B"> B) Tradição Apostólica, Concílios Ecumênicos e
+                        Santos</label><br />
+                    <label><input type="radio" name="q12" value="C"> C) Sagradas Escrituras, Sacramentos e
+                        Santos</label><br />
+                    <label><input type="radio" name="q12" value="D"> D) Magistério da Igreja, Sacramentos e Concílios
+                        Ecumênicos</label><br />
+                    <label><input type="radio" name="q12" value="E"> E) Tradição Apostólica, Santos e Eucaristia</label>
+                </div>
 
-            2. Quais são os três pilares fundamentais da fé católica?
-            Tradição Apostólica, Sagradas Escrituras e Magistério da Igreja
-            Tradição Apostólica, Concílios Ecumênicos e Santos
-            Sagradas Escrituras, Sacramentos e Santos
-            Magistério da Igreja, Sacramentos e Concílios Ecumênicos
-            Tradição Apostólica, Santos e Eucaristia
-            ✅ Resposta correta: A
+                <div class="pergunta" data-id="13" data-pagina="3">
+                    <p>13. Qual é o significado de 'Latria' na teologia católica?</p>
+                    <label><input type="radio" name="q13" value="A" required> A) Honra especial dedicada à Virgem
+                        Maria</label><br />
+                    <label><input type="radio" name="q13" value="B"> B) Veneração dedicada aos santos e
+                        anjos</label><br />
+                    <label><input type="radio" name="q13" value="C"> C) Adoração reservada exclusivamente a
+                        Deus</label><br />
+                    <label><input type="radio" name="q13" value="D"> D) Honra especial a São José</label><br />
+                    <label><input type="radio" name="q13" value="E"> E) Veneração dedicada aos mártires</label>
+                </div>
 
+                <div class="pergunta" data-id="14" data-pagina="3">
+                    <p>14. Quais são os sete sacramentos reconhecidos pela Igreja Católica?</p>
+                    <label><input type="radio" name="q14" value="A" required> A) Batismo, Confirmação, Eucaristia,
+                        Reconciliação, Hiperdulia, Dulia, Latria</label><br />
+                    <label><input type="radio" name="q14" value="B"> B) Eucaristia, Batismo, Ordem, Matrimônio, Santo
+                        Agostinho, São Tomás de Aquino, Santo Antônio</label><br />
+                    <label><input type="radio" name="q14" value="C"> C) Batismo, Confirmação, Eucaristia, Reconciliação,
+                        Unção dos Enfermos, Ordem, Matrimônio</label><br />
+                    <label><input type="radio" name="q14" value="D"> D) Eucaristia, Batismo, Ordem, Hiperdulia, Santo
+                        Agostinho, São José, Dulia</label><br />
+                    <label><input type="radio" name="q14" value="E"> E) Batismo, Reconciliação, Ordem, Matrimônio,
+                        Dulia, Hiperdulia, São Pedro</label>
+                </div>
 
-            4. Qual é o significado de 'Latria' na teologia católica?
-            Honra especial dedicada à Virgem Maria
-            Veneração dedicada aos santos e anjos
-            Adoração reservada exclusivamente a Deus
-            Honra especial a São José
-            Veneração dedicada aos mártires
-            ✅ Resposta correta: A
+                <div class="pergunta" data-id="15" data-pagina="3">
+                    <p>15. Qual é um dos motivos de Maria ser chamada de Nova Arca da Aliança?</p>
+                    <label><input type="radio" name="q15" value="A" required> A) Porque carregou as tábuas da
+                        Lei</label><br />
+                    <label><input type="radio" name="q15" value="B"> B) Porque carregou o próprio Deus encarnado em seu
+                        ventre</label><br />
+                    <label><input type="radio" name="q15" value="C"> C) Porque foi escolhida como sumo
+                        sacerdote</label><br />
+                    <label><input type="radio" name="q15" value="D"> D) Porque simboliza o maná do deserto</label><br />
+                    <label><input type="radio" name="q15" value="E"> E) Porque liderou o povo de Israel no
+                        deserto</label>
+                </div>
 
-            5. Quantos são os sacramentos reconhecidos pela Igreja Católica?
-            A) 3
-            B) 5
-            C) 6
-            D) 7
-            E) 10
-            ✅ Resposta correta: D
+                <div class="pergunta" data-id="16" data-pagina="4">
+                    <p>16. Onde está localizada a cidade de Lourdes?</p>
+                    <label><input type="radio" name="q16" value="A" required> A) Norte da Itália</label><br />
+                    <label><input type="radio" name="q16" value="B"> B) Sudoeste da Alemanha</label><br />
+                    <label><input type="radio" name="q16" value="C"> C) Sul da França</label><br />
+                    <label><input type="radio" name="q16" value="D"> D) Centro de Portugal</label><br />
+                    <label><input type="radio" name="q16" value="E"> E) Oeste da Espanha</label>
+                </div>
 
-            6. Qual é um dos motivos de Maria ser chamada de Nova Arca da Aliança?
-            Porque carregou as tábuas da Lei
-            Porque carregou o próprio Deus encarnado em seu ventre
-            Porque foi escolhida como sumo sacerdote
-            Porque simboliza o maná do deserto
-            Porque liderou o povo de Israel no deserto
-            ✅ Resposta correta: B
+                <div class="pergunta" data-id="17" data-pagina="4">
+                    <p>17. Qual foi o nome da jovem que presenciou as aparições de Nossa Senhora em Lourdes?</p>
+                    <label><input type="radio" name="q17" value="A" required> A) Teresa de Ávila</label><br />
+                    <label><input type="radio" name="q17" value="B"> B) Bernadette Soubirous</label><br />
+                    <label><input type="radio" name="q17" value="C"> C) Clara de Assis</label><br />
+                    <label><input type="radio" name="q17" value="D"> D) Catarina Labouré</label><br />
+                    <label><input type="radio" name="q17" value="E"> E) Joana d’Arc</label>
+                </div>
 
-        </section>
+                <div class="pergunta" data-id="18" data-pagina="4">
+                    <p>18. Como Nossa Senhora se identificou durante as aparições em Lourdes?</p>
+                    <label><input type="radio" name="q18" value="A" required> A) Nossa Senhora da Paz</label><br />
+                    <label><input type="radio" name="q18" value="B"> B) A Virgem Dolorosa</label><br />
+                    <label><input type="radio" name="q18" value="C"> C) A Rainha do Céu</label><br />
+                    <label><input type="radio" name="q18" value="D"> D) A Imaculada Conceição</label><br />
+                    <label><input type="radio" name="q18" value="E"> E) A Senhora das Graças</label>
+                </div>
 
-        <section id="perguntas_pag_4">
-            1. Onde está localizada a cidade de Lourdes?
-            A) Norte da Itália
-            B) Sudoeste da Alemanha
-            C) Sul da França
-            D) Centro de Portugal
-            E) Oeste da Espanha
-            ✅ Resposta correta: C
+                <div class="pergunta" data-id="19" data-pagina="4">
+                    <p>19. O que surgiu após Bernadette cavar o chão da Gruta de Massabielle?</p>
+                    <label><input type="radio" name="q19" value="A" required> A) Uma imagem da Virgem</label><br />
+                    <label><input type="radio" name="q19" value="B"> B) Uma árvore com frutos</label><br />
+                    <label><input type="radio" name="q19" value="C"> C) Um altar de pedra</label><br />
+                    <label><input type="radio" name="q19" value="D"> D) Um relicário antigo</label><br />
+                    <label><input type="radio" name="q19" value="E"> E) Uma fonte de água milagrosa</label>
+                </div>
 
-            2. Qual foi o nome da jovem que presenciou as aparições de Nossa Senhora em Lourdes?
-            A) Teresa de Ávila
-            B) Bernadette Soubirous
-            C) Clara de Assis
-            D) Catarina Labouré
-            E) Joana d’Arc
-            ✅ Resposta correta: B
+                <div class="pergunta" data-id="20" data-pagina="4">
+                    <p>20. O que inspirou a textura crocante do Ferrero Rocher?</p>
+                    <label><input type="radio" name="q20" value="A" required> A) A formação rochosa da
+                        gruta</label><br />
+                    <label><input type="radio" name="q20" value="B"> B) Os seixos do rio Gave</label><br />
+                    <label><input type="radio" name="q20" value="C"> C) As velas dos peregrinos</label><br />
+                    <label><input type="radio" name="q20" value="D"> D) A aparência do altar da gruta</label><br />
+                    <label><input type="radio" name="q20" value="E"> E) As folhas secas da região</label>
+                </div>
 
-            3. Em que ano ocorreram as aparições de Nossa Senhora de Lourdes?
-            A) 1830
-            B) 1845
-            C) 1858
-            D) 1860
-            E) 1882
-            ✅ Resposta correta: C
-
-            4. Como Nossa Senhora se identificou durante as aparições em Lourdes?
-            A) Nossa Senhora da Paz
-            B) A Virgem Dolorosa
-            C) A Rainha do Céu
-            D) A Imaculada Conceição
-            E) A Senhora das Graças
-            ✅ Resposta correta: D
-
-            5. O que surgiu após Bernadette cavar o chão da Gruta de Massabielle?
-            A) Uma imagem da Virgem
-            B) Uma árvore com frutos
-            C) Um altar de pedra
-            D) Um relicário antigo
-            E) Uma fonte de água milagrosa
-            ✅ Resposta correta: E
-
-            6. O que inspirou a textura crocante do Ferrero Rocher?
-            A) A formação rochosa da gruta
-            B) Os seixos do rio Gave
-            C) As velas dos peregrinos
-            D) A aparência do altar da gruta
-            E) As folhas secas da região
-            ✅ Resposta correta: A
-        </section>
-        <!-- /CORPO -->
-
-        <!-- MODELO -->
-        <form id="quizForm">
-            <fieldset>
-                <legend>1. Qual é considerada por muitos estudiosos como a primeira denominação cristã?</legend>
-                <label><input type="radio" name="q1" value="A"> A) Protestantismo</label><br>
-                <label><input type="radio" name="q1" value="B"> B) Ortodoxia</label><br>
-                <label><input type="radio" name="q1" value="C"> C) Anglicanismo</label><br>
-                <label><input type="radio" name="q1" value="D"> D) Catolicismo</label><br>
-                <label><input type="radio" name="q1" value="E"> E) Pentecostalismo</label>
-            </fieldset>
-            <button type="submit">Enviar Respostas</button>
+                <button type="submit">Enviar Respostas</button>
+            </div>
         </form>
-        <!-- /MODELO -->
-
     </div>
-
 
     <div class="footer">
         <div class="container">
@@ -262,8 +246,80 @@
             <span class="version">v1.0.0</span>
         </div>
     </div>
-</body>
 
-<script></script>
+    <script>
+        if (!sessionStorage.ID_USUARIO) {
+            alert("Você precisa estar logado para acessar o quiz.");
+            window.location.href = "login.html";
+        }
+
+        const form = document.getElementById('formQuiz');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Pega o usuário logado do sessionStorage
+            const idUsuario = Number(sessionStorage.ID_USUARIO);
+            if (!idUsuario) {
+                alert('Usuário não autenticado. Faça login para continuar.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            const respostas = [];
+            const perguntas = document.querySelectorAll('.pergunta');
+
+            for (const pergunta of perguntas) {
+                const idPergunta = Number(pergunta.dataset.id);
+                const nomeInput = `q${idPergunta}`;
+                const inputSelecionado = form.elements[nomeInput];
+
+                if (!inputSelecionado) {
+                    alert(`Pergunta ${idPergunta} não encontrada no formulário.`);
+                    return;
+                }
+
+                const respostaSelecionada = inputSelecionado.value;
+
+                if (!respostaSelecionada) {
+                    alert(`Você precisa responder a pergunta ${idPergunta}.`);
+                    return;
+                }
+
+                // Monta o objeto resposta para enviar ao backend
+                respostas.push({
+                    fkpergunta: idPergunta,
+                    letraResposta: respostaSelecionada // por enquanto só a letra, o backend vai tratar
+                });
+            }
+
+            const dadosEnvio = {
+                fkusuario: idUsuario,
+                respostas: respostas
+            };
+
+
+            try {
+                const response = await fetch('/usuario_resposta/salvar', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(dadosEnvio)
+                });
+
+                if (response.ok) {
+                    alert('Respostas enviadas com sucesso!');
+                    window.location.href = './dashboard/dashboard.html'; // redireciona para a dashboard
+                } else {
+                    const erroTexto = await response.text();
+                    alert('Erro ao enviar respostas: ' + erroTexto);
+                }
+            } catch (error) {
+                console.error('Erro na requisição:', error);
+                alert('Erro de conexão com o servidor.');
+            }
+        });
+    </script>
+
+</body>
 
 </html>

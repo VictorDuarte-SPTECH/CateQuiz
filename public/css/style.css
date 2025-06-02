@@ -197,7 +197,7 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('https://3428097a79.clvaw-cdnwnd.com/7d94e8272ca0914d046c808326ff05c0/200038310-f05f1f05f3/IMG_4256.jpg');
   background-size: cover;
 }
 
@@ -214,7 +214,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: palevioletred;
+  color:darkred;
   flex-direction: column;
   height: fit-content;
   padding: 20px 0;
